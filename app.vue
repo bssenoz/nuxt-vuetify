@@ -35,15 +35,24 @@
           </v-card>
         </v-dialog>
 
+        <v-expansion-panels class="mt-8">
+          <v-expansion-panel v-for="i in 3" :key="i"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title="Item"></v-expansion-panel>
+        </v-expansion-panels>
+
         <v-card class="mt-8">
           <v-tabs v-model="tab" background-color="primary" class="rounded-t-lg">
-            <v-tab value="one" class="py-2 px-4" :class="tab === 'one' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600'">
+            <v-tab value="one" class="py-2 px-4"
+              :class="tab === 'one' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600'">
               Item One
             </v-tab>
-            <v-tab value="two" class="py-2 px-4" :class="tab === 'two' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600'">
+            <v-tab value="two" class="py-2 px-4"
+              :class="tab === 'two' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600'">
               Item Two
             </v-tab>
-            <v-tab value="three" class="py-2 px-4" :class="tab === 'three' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600'">
+            <v-tab value="three" class="py-2 px-4"
+              :class="tab === 'three' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600'">
               Item Three
             </v-tab>
           </v-tabs>
@@ -65,14 +74,14 @@
           </v-card-text>
         </v-card>
 
-        <!-- Carousel Section -->
-        <v-card class="mt-8">
-          <v-carousel>
-            <v-carousel-item v-for="(item, index) in carouselItems" :key="index" :src="item.src" :alt="item.alt">
-              <v-img :src="item.src" height="200px" />
-            </v-carousel-item>
-          </v-carousel>
-        </v-card>
+        <div>
+
+
+
+
+
+
+        </div>
 
         <!-- Form Section -->
         <v-card class="mt-8">
